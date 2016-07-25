@@ -5,8 +5,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.Font;
 import java.awt.GridLayout;
-//import java.awt.Insets;
-//import java.util.ArrayList;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EtchedBorder;
 import javax.swing.border.LineBorder;
@@ -60,7 +58,6 @@ public class BMICalcFrame extends JFrame
    private static JButton no_9_button;
    private static JButton redo_button;
    private static JButton undo_button;
-   //private static ArrayList buttonList;
    private static JLabel display_text;
    private static JMenu settings_menu;
    private static JMenu mode_menu;
@@ -68,7 +65,6 @@ public class BMICalcFrame extends JFrame
    private static JMenuItem metric_mode_item;
    private static JMenuItem imperial_mode_item;
    private static JPanel action_keypad;
-   //private static JPanel display_screen_panel;
    private static JPanel numeric_keypad;
    private static JScrollPane display_screen_scroll_pane;
    private static JTextArea display_screen;
@@ -197,18 +193,6 @@ public class BMICalcFrame extends JFrame
       return aButton;
    }
    
-   /*public JPanel createDisplayScreenPanel()
-   {
-      display_screen_panel = new JPanel();
-      //display_screen.setLayout(new BorderLayout());
-      display_screen_panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-      display_screen_panel.setBackground(Color.GRAY);
-      display_screen_panel.add(this.createDisplayScreen());
-      
-      
-      return display_screen_panel;
-   }*/
-   
    public JScrollPane createDisplayScreenScrollPane()
    {
       display_screen_scroll_pane = new JScrollPane(this.createDisplayScreen());
@@ -307,19 +291,6 @@ public class BMICalcFrame extends JFrame
       }
  
    }
-   
-   /*private void addToButtonList(JButton aButton) throws NullPointerException
-   {
-      if(aButton == null)
-      {
-         throw new NullPointerException();
-      }
-      
-      else
-      {
-         buttonList.add(aButton);
-      }
-   }*/
      
    class No1ButtonListener implements ActionListener
    {        
