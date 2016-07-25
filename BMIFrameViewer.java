@@ -1,3 +1,7 @@
+/*
+* A Class that displays the BMI Calculator
+*/
+
 //Java Package
 import javax.swing.JFrame;
 
